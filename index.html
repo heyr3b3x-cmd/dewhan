@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Valentine 💗</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<audio id="popSound" src="https://www.soundjay.com/buttons/sounds/button-16.mp3"></audio>
+
+<div class="container">
+
+<!-- PAGE 1 -->
+<div class="page active" id="page1">
+  <h1>HALLO DEWW  💗</h1>
+  <p>Aku ada sedikit sesuatu nihh...</p>
+  <button onclick="nextPage(2)">Buka</button>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page" id="page2">
+  <div class="card">
+    <h1>mau lanjut nih? 💖</h1>
+    <button onclick="nextPage(3)">Lanjut</button>
+  </div>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page" id="page3">
+  <div class="card">
+    <h2>ini cuma buat kamu doang tau deww 💗</h2>
+    <button onclick="nextPage(4)">Main</button>
+  </div>
+</div>
+
+<!-- PAGE 4 (GAME) -->
+<div class="page" id="page4">
+  <h1>Klik semua Love 💗</h1>
+  <div id="gameArea">
+    <div class="love" style="top:50px; left:80px;">💗</div>
+    <div class="love" style="top:150px; left:200px;">💗</div>
+    <div class="love" style="top:100px; left:140px;">💗</div>
+  </div>
+  <p id="score">Score: 0</p>
+</div>
+
+<!-- PAGE 5 (UPLOAD FOTO) -->
+<div class="page" id="page5">
+  <div class="card">
+    <h2>Kirim foto kamu dulu dong 📸</h2>
+    <input type="file" id="photoInput" accept="image/*">
+    <br><br>
+    <img id="preview">
+    <br><br>
+    <button onclick="checkPhoto()">Lanjut 💗</button>
+  </div>
+</div>
+
+<!-- PAGE 6 (ENDING) -->
+<div class="page" id="page6">
+  <div class="card">
+    <h1>💌</h1>
+    <p>ok thank buat foto nya wwkwkwk
+      btw kalo kamu lagi capek atau mau bagiin
+      ceeita kamu jangan sungkan ssungkan ya deww
+      aku juga bakal dengerin kamu kok,
+      soalnya ngg tau kenapa kalo setiap ngobrol sama 
+      kamu itu tuh waktu kaya berasa cepet banget tau 💗</p>
+
+    <img id="finalPhoto">
+
+    <br><br>
+    <button onclick="downloadPhoto()">Download 📥</button>
+    <button onclick="shareLink()">Bagikan 💌</button>
+  </div>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
